@@ -4,9 +4,9 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1770319458|7445515656';
+const CACHE_VERSION = '1784495823|6769989869';
 /** @type {string} */
-const CACHE_PREFIX = 'Balls-sw-cache-';
+const CACHE_PREFIX = 'Shariki MAIN-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
 const OFFLINE_URL = 'index.offline.html';
