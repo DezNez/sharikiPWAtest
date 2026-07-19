@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1784498593|626518118';
+const CACHE_VERSION = '1784498932|965309935';
 /** @type {string} */
 const CACHE_PREFIX = 'Shariki MAIN-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
