@@ -87,13 +87,11 @@ async function fetchAndCache(event, cache, isCacheable) {
 	return response;
 }
 
-self.addEventListener(
-	'fetch',
-	/**
-	 * Triggered on fetch
-	 * @param {FetchEvent} event
-	 */
-	(event) => {
+self.addEventListener('fetch', (event) => {
+    // Игнорируем запросы к Umami Cloud, пусть идут напрямую в сеть
+    if (event.request.url.includes('cloud.umami.is')) {
+        return;
+    }
 		const isNavigate = event.request.mode === 'navigate';
 		const url = event.request.url || '';
 		const referrer = event.request.referrer || '';
